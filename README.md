@@ -1,6 +1,6 @@
 # diff-patrol
 
-[Robô Pioneer 3-AT patrulhando uma arena no Webots, com navegação A* e detecção de anomalias](./autonomo.gif)
+![Robô Pioneer 3-AT patrulhando uma arena no Webots, com navegação A* e detecção de anomalias](./autonomo.gif)
 
 ## O que faz
 
