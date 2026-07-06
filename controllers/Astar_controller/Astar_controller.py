@@ -134,8 +134,7 @@ def seg_dist(px, py, x1, y1, x2, y2):
     return math.hypot(px - (x1 + tp * dx), py - (y1 + tp * dy))
 
 
-# Grid booleano (True = ocupado). Encapsula conversao mundo<->celula
-# e a estampagem das primitivas do mapa.
+# Occupancy grid: conversao mundo<->celula e estampagem das primitivas do mapa.
 class OccupancyGrid:
     def __init__(self, res, lim):
         self.res = res
@@ -452,8 +451,7 @@ while robot.step(timestep) != -1:
     fL = sector_min(ranges, 5, 55)
     fR = sector_min(ranges, -55, -5)
 
-    # Reativo simples anti-colisao. Ao acionar, marca replanejamento:
-    # ao sair do desvio o A* recalcula a rota da posicao atual.
+    # Reativo anti-colisao; ao sair do desvio o A* recalcula a rota.
     if min(front, fL, fR) < SAFE_STOP:
         if fL < fR:
             set_speed(CRUISE * 0.25, -CRUISE * 0.2)
