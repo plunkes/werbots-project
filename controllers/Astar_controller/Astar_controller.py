@@ -78,7 +78,7 @@ def set_speed(v_left, v_right):
     motors[2].setVelocity(v_left)
     motors[3].setVelocity(v_right)
 
-
+print("Para parar a simulação e mostrar os logs, aperte F")
 # ---- Log de trajetoria ----
 log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         "trajetoria_gps.txt")
