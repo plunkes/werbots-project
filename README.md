@@ -1,6 +1,6 @@
 # diff-patrol
 
-<img src="./autonomo.gif" width="1000" alt="Descrição do GIF">
+<img src="./autonomo.gif" width="1000" alt="Robo patrulhando e detectando anomalias">
 
 ## O que faz
 
