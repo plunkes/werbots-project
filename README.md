@@ -17,7 +17,6 @@ Robô Pioneer 3-AT patrulhando uma arena no Webots, com navegação A* e detecç
 worlds/pioneer3at-trab-2026-v1.wbt   mundo (arena, obstáculos, paredes, pedestre)
 controllers/
   Astar_controller/                  navegação A* + reativo + visão (controlador do robô)
-  Reactive_controller/               controlador reativo simples
   random_walk/                       pedestre (random walk preso a um quadrado 10x10)
 ```
 
@@ -26,3 +25,8 @@ controllers/
 1. Abrir `worlds/pioneer3at-trab-2026-v1.wbt` no Webots.
 2. No robô `PIONEER_3AT`, usar o controlador `Astar_controller`.
 3. Play. Tecla **F** na janela 3D encerra e fecha o log.
+
+Após rodar e clicar F, o arquivo será salvo dentro do controlador Astar_controller ->
+```
+controllers/Astar_contoller/trajetoria_gps.txt
+```
